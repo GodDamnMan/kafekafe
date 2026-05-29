@@ -1,0 +1,5 @@
+.schedule__list {
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 5px 0 13px;
+}

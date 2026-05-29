@@ -1,0 +1,33 @@
+.address-card {
+  padding: 5px 5px 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address-card__left {
+  align-items: center;
+  gap: 10px;
+}
+
+.address-card__title {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.address-card__subtitle {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.address-card__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.address-card__arrow--open {
+  transform: rotate(90deg);
+}

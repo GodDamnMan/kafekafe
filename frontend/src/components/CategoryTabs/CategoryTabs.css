@@ -1,0 +1,33 @@
+.tabs__list {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.tabs__list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tabs__list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+}
+
+.tabs__button {
+  font-size: 18px;
+  color: var(--text-disable);
+
+  white-space: nowrap;
+}
+
+.tabs__item {
+  flex: 0 0 auto;
+}
+
+.tabs__button--active {
+  color: var(--text-color);
+  font-weight: 500;
+}

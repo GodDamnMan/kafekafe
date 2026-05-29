@@ -1,0 +1,75 @@
+{
+  "sections": [
+    {
+      "title": "Выпечка",
+      "items": [
+        {
+          "id": "1",
+          "name": "Треугольник с курицей",
+          "description": "PLACEHOLDER",
+          "price": 79,
+          "kbju": 239
+        },
+        {
+          "id": "7",
+          "name": "Шаурма",
+          "description": "PLACEHOLDER",
+          "price": 200,
+          "kbju": 400
+        },
+        {
+          "id": "8",
+          "name": "Ватрушка",
+          "description": "PLACEHOLDER",
+          "price": 50,
+          "kbju": 70
+        }
+      ]
+    },
+    {
+      "title": "Супы",
+      "items": [
+        {
+          "id": "2",
+          "name": "Борщ",
+          "description": "PLACEHOLDER",
+          "price": 129,
+          "kbju": 60
+        },
+        {
+          "id": "3",
+          "name": "Лагман",
+          "description": "PLACEHOLDER",
+          "price": 199,
+          "kbju": 120
+        }
+      ]
+    },
+    {
+      "title": "Шашлык",
+      "items": [
+        {
+          "id": "4",
+          "name": "Люлякебаб из баранины",
+          "description": "PLACEHOLDER",
+          "price": 159,
+          "kbju": 200
+        },
+        {
+          "id": "5",
+          "name": "Куриные крылья",
+          "description": "PLACEHOLDER",
+          "price": 159,
+          "kbju": 200
+        },
+        {
+          "id": "6",
+          "name": "Шашлык бараний",
+          "description": "PLACEHOLDER",
+          "price": 159,
+          "kbju": 200
+        }
+      ]
+    }
+  ]
+}

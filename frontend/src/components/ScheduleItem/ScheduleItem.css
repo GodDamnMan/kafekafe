@@ -1,0 +1,33 @@
+.schedule__item {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: var(--text-disable);
+}
+
+.schedule__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.schedule__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-color);
+}
+
+.schedule__item--active {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.schedule__item--active > .schedule__left {
+  position: relative;
+}
+
+.schedule__dot {
+  position: absolute;
+  left: -13px;
+}

@@ -1,0 +1,166 @@
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 24px;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  padding: 28px 21px 24px;
+  background-color: #f7f7f7;
+  border-radius: 28px 28px 0 0;
+  overflow-y: auto;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: var(--card-background);
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modal__close svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.modal__content {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal__title {
+  width: 70%;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.modal__schedule {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.modal__schedule--open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.modal__schedule--open {
+  margin-bottom: 15px;
+}
+
+.modal__schedule-inner {
+  overflow: hidden;
+}
+
+.modal__section {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__actions {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+}
+
+.modal__call-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 16px;
+  background-color: var(--card-background);
+  border-radius: 18px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modal__action-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.modal__action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__tg-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 48px;
+  background-color: var(--card-background);
+  border-radius: 18px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modal__call-btn:active,
+.modal__tg-btn:active {
+  transform: scale(0.98);
+}
+
+.modal__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 16px;
+  background-color: var(--card-background);
+  border-radius: 18px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modal__link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__link-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.modal__link:active {
+  transform: scale(0.98);
+}
