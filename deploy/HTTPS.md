@@ -9,7 +9,8 @@ Use this when another load balancer or cloud panel terminates HTTPS before the s
 ```bash
 cp .env.prod.example .env.prod
 sed -i 's/^HTTP_PORT=.*/HTTP_PORT=80/' .env.prod
-docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
+docker compose --env-file .env.prod -f docker-compose.prod.yml pull
+docker compose --env-file .env.prod -f docker-compose.prod.yml up -d
 ```
 
 ## Host nginx + Certbot
@@ -21,7 +22,8 @@ Use this when this Ubuntu server should own the public TLS certificate.
 ```bash
 cp .env.prod.example .env.prod
 sed -i 's/^HTTP_PORT=.*/HTTP_PORT=127.0.0.1:8080/' .env.prod
-docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
+docker compose --env-file .env.prod -f docker-compose.prod.yml pull
+docker compose --env-file .env.prod -f docker-compose.prod.yml up -d
 ```
 
 2. Install host nginx and Certbot:

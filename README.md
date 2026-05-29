@@ -20,8 +20,11 @@
 ```bash
 cd mySite/deploy
 cp .env.prod.example .env.prod
-docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
+docker compose --env-file .env.prod -f docker-compose.prod.yml pull
+docker compose --env-file .env.prod -f docker-compose.prod.yml up -d
 ```
+
+Production compose тянет образы из GHCR. По умолчанию используется `IMAGE_TAG=latest`; для pinned deploy можно указать, например, `IMAGE_TAG=sha-cb46247`.
 
 По умолчанию контейнерный nginx публикуется на порт `80`. Чтобы поднять за host nginx/Certbot, поставьте в `deploy/.env.prod`:
 
